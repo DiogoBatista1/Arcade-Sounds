@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+         <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+        <title>Retro Sounds</title>
+
+        <script src="Js/game.js"></script>
+        <style>
+            body {
+                background: url("./Img/istockphoto-1202078375-170667a.jpg") center center;
+            }
+
+            h1 {
+                color: white;
+                text-shadow: 2px 2px 5px red;
+            }
+
+            #display {
+                text-shadow: 2px 2px 5px rgb(228, 85, 216);
+            }
+
+            #info {
+            text-shadow: 0 0 3px #b700ff, 0 0 5px #0000FF;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="drum-machine" class="container">
+        <h1 class="text-center">Retro Sounds!</h1>
+        <div class="card">
+            <div class="card-body py-2">
+                <div id="display" class="text-center">Nothing played yet!</div>
+            </div>
+        </div>
+        <div class="text-center">
+        <button class="drum-pad btn btn-block btn-outline-primary btn-lg col-3 mx-auto" id="drum-0" onclick="play('Q')">
+            Q
+            <audio src="./audioClips/mixkit-retro-game-notification-212.wav" id="Q" class="clip"></audio>
+        </button>
+        <button class="drum-pad btn btn-block btn-outline-primary btn-lg col-3 mx-auto" id="drum-1" onclick="play('W')">
+            W
+            <audio src="./audioClips/mixkit-arcade-game-opener-222.wav " id="W" class="clip"></audio>
+        </button>
+        <button class="drum-pad btn btn-block btn-outline-primary btn-lg col-3 mx-auto" id="drum-2" onclick="play('E')">
+            E
+            <audio src="./audioClips/mixkit-arcade-game-complete-or-approved-mission-205.wav" id="E" class="clip"></audio>
+        </button>
+        </div>  
+        <div class="text-center">
+        <button class="drum-pad btn btn-block btn-outline-success btn-lg col-3 mx-auto" id="drum-3" onclick="play('A')">
+            A
+            <audio src="./audioClips/mixkit-arcade-bonus-229.wav" id="A" class="clip"></audio>
+        </button>
+        <button class="drum-pad btn btn-block btn-outline-success btn-lg col-3 mx-auto" id="drum-4" onclick="play('S')">
+            S
+            <audio src="./audioClips/mixkit-arcade-retro-background-219.wav" id="S" class="clip"></audio>
+        </button>
+        <button class="drum-pad btn btn-block btn-outline-success btn-lg col-3 mx-auto" id="drum-5" onclick="play('D')">
+            D
+            <audio src="./audioClips/mixkit-arcade-retro-changing-tab-206.wav" id="D" class="clip"></audio>
+        </button>
+        </div>
+        <div class="text-center">
+        <button class="drum-pad btn btn-block btn-outline-danger btn-lg col-3 mx-auto" id="drum-6" onclick="play('Z')">
+            Z
+            <audio src="./audioClips/mixkit-failure-arcade-alert-notification-240.wav" id="Z" class="clip"></audio>
+        </button>
+        <button class="drum-pad btn btn-block btn-outline-danger btn-lg col-3 mx-auto" id="drum-7" onclick="play('X')">
+            X
+            <audio src="./audioClips/mixkit-arcade-fast-game-over-233.wav" id="X" class="clip"></audio>
+        </button>
+        <button class="drum-pad btn btn-block btn-outline-danger btn-lg col-3 mx-auto" id="drum-8" onclick="play('C')">
+            C
+            <audio src="./audioClips/mixkit-arcade-retro-game-over-213.wav" id="C" class="clip"></audio>
+        </button>
+        </div>
+        <div class="card border-info mb-3 bg-transparent py-3">
+            <div class="card-body text-center text-white">
+                <div class="card-text" id="info">Press the buttons to play the sounds. </p>
+                You can play them, pressing the corresponding keyboard keys.
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
